@@ -88,5 +88,11 @@ set -o vi
 
 #Export git editors
 export GIT_EDITOR=vim
-export VISUAL=subl
+
+if [[ -f /usr/bin/subl ]]; then
+	export VISUAL=subl
+else
+	export VISUAL=vim
+fi
+
 export EDITOR=vim
