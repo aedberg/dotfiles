@@ -1,15 +1,19 @@
-# fino-time.zsh-theme
+# fino-time-2.zsh-theme
 
 # Use with a dark background and 256-color terminal!
-# Meant for people with RVM and git. Tested only on OS X 10.7.
+# Meant for people with RVM and git. Tested only on OS X 10.7 and Ubuntu 14.04
 
 # You can set your computer name in the ~/.box-name file if you want.
 
 # Borrowing shamelessly from these oh-my-zsh themes:
 #   bira
 #   robbyrussell
+#	fino-time
+#	cypher
 #
 # Also borrowing from http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
+
+# 2014/12/07 - Added exit code if non-zero
 
 function virtualenv_info {
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
