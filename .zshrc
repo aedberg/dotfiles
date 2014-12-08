@@ -85,3 +85,8 @@ alias ls='ls -l --color'
 eval `dircolors ~/.dir_colors/dircolors`
 
 set -o vi
+
+#Export git editors
+export GIT_EDITOR=vim
+export VISUAL=subl
+export EDITOR=vim
